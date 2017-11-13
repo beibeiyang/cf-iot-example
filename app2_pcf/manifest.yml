@@ -1,0 +1,15 @@
+---
+applications:
+- name: iotapp2-at-port-4443
+  host: iotapp2
+  buildpack: python_buildpack
+  memory: 128M
+  disk_quota: 256M
+  services:
+    - iot_redis
+  env:
+    MONGO_ENV_SERVER_IP: mongo.domain.com
+    MONGO_ENV_USERNAME: user
+    MONGO_ENV_PASSWORD: pass
+    MONGO_ENV_AUTHSOURCE: iotlab
+    MONGO_ENV_PORT: 27017

@@ -1,0 +1,1 @@
+web: bokeh serve --port=8080 --allow-websocket-origin=iotapp1.local.pcfdev.io --address=0.0.0.0 --use-xheaders --log-level=debug app
